@@ -1,14 +1,20 @@
 import './App.css';
 
+
 function App() {
-  const name = undefined;
-  return (
-    <>
-      <h1>리액트 안녕!</h1>
-      <h2>잘 작동하니?</h2>
-      <div>{name || '리액트'}</div>
-    </>
-  );
+  const name = '리액트';
+ return ( 
+  <>
+  
+<div  className="react">{name}</div>
+
+{/* 하지만 이런 주석이나 */}
+{/* 이런 주석은 페이지에 그대로 나타나게 됩니다. */}
+<input />
+</>
+ );
+
 }
+
 
 export default App;
