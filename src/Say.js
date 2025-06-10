@@ -5,7 +5,7 @@ const Say = () => {
   const onClickEnter = () => setMessage("안녕하세요!");
   const onClickLeave = () => setMessage("안녕히 가세요!");
 
-  const { color, setColor } = useState("black");
+  const [color, setColor] = useState("black");
 
   return (
     <div>
@@ -17,9 +17,9 @@ const Say = () => {
       </button>
       <button style={{ color: "green" }} onClick={() => setColor("green")}>
         초록색
-        <button style={{ color: "blue" }} onClick={() => setColor("blue")}>
-          파란색
-        </button>
+      </button>
+      <button style={{ color: "blue" }} onClick={() => setColor("blue")}>
+        파란색
       </button>
     </div>
   );
